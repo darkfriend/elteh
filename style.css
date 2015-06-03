@@ -12,8 +12,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
-	width: 100%;
+    font: 12px/18px Arial, sans-serif;
+    width: 100%;
+    background : #fff;
+    background: linear-gradient(to right, #fff 50%, #212429 50%);
+    background: -webkit-linear-gradient(left, #fff 50%, #212429 50%);
+    background: -o-linear-gradient(left, #fff 50%, #212429 50%);
+    background: -moz-linear-gradient(left, #fff 50%, #212429 50%);
+    background: -ms-linear-gradient(left, #fff 50%, #212429 50%);
+    background-size: 100% 100%;
+    -pie-background: linear-gradient(to right, #fff 50%, #212429 50%);
+    behavior: url(pie/PIE.htc);
 }
 .wrapper {
         width: 1254px;
@@ -25,7 +34,7 @@ input[type="tel"],
 input[type="email"]{
     background: #ffffff;
     border: 1px solid #c7c6cc;
-    padding: 13px 11px;
+    padding: 10px 37px 9px 10px;
     color: #666f7a;
     font-size: 12px;
     line-height: 18px;
@@ -67,7 +76,7 @@ input[type="email"]{
     margin: 50px 37px 18px 48px;
 }
 .header_search{
-    margin-top: 18px;
+    margin-top: 14px;
 }
 .header_search_form{
     position: relative;
@@ -75,7 +84,7 @@ input[type="email"]{
     display: flex;
 }
 .header_search_form input[type="text"]{
-    width: 100%;
+    width: 394px;
 }
 .header_search_form button[type="submit"]{
     width: 16px;
@@ -90,9 +99,11 @@ input[type="email"]{
 .leftContainer{
     display: table;
     border-right: 2px solid #ffffff;
+    position: relative;
+    width: 527px;
 }
 .leftContainer_manage{
-    margin: 41px 0 0 75px;
+    margin: 57px 0 0 59px;
 }
 .manage_icon{
     list-style: none;
@@ -150,7 +161,7 @@ input[type="email"]{
     height: 22px;
 }
 .header_mini_profile{
-    line-height: 32px;
+    line-height: 21px;
     display: table;
 }
 .header_mini_profile .mini_profile_avatar{
@@ -160,6 +171,7 @@ input[type="email"]{
     border-radius: 50%;
     margin-right: 10px;
     float: left;
+    margin-top: -6px;
 }
 .header_mini_profile .mini_profile_name{
     font-size: 16px;
@@ -181,13 +193,13 @@ input[type="email"]{
 .container_news_list{
     float: left;
     display: table;
-    width: 198px;
-    margin: 100px 44px 0 44px;
+    width: 200px;
+    margin: 105px 44px 0 44px;
 }
 .container_news_list h1{
     font-size: 30px;
     line-height: 28px;
-    margin-bottom:  35px;
+    margin-bottom: 27px;
 }
 .container_news_list a,
 .new_notice_list a,
@@ -196,46 +208,56 @@ input[type="email"]{
 }
 .container_news_list .news_list{
     list-style: none;
+    padding-left: 2px;
 }
 .container_news_list .news_list li,
 .new_notice_list li,
 .born_list li{
     float: none;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 .news_list .news_list_title{
     font-size: 16px;
     line-height: 22px;
     color: #000;
+    width: 185px;
+    display: block;
 }
 .news_list hr,
 .new_notice_list hr,
 .born_list hr{
     color: #a7a9b0;
-    margin: 22px 0;
+    margin: 16px 0 23px 0;
     border: 1px solid #a7a9b0;
+}
+.new_notice_list hr{
+    margin: 16px 0 33px 0;
 }
 .news_list .news_list_date,
 .new_notice_list .notice_list_date,
 .born_list .born_list_date{
     font-style: italic;
 }
-.news_list .news_list_category,
-.new_notice_list .news_list_category,
-.born_list .born_list_category{
-    margin-bottom: 20px;
+.news_list .news_list_category, born_list .born_list_category{
+    margin-bottom: 9px;
+}
+.new_notice_list .news_list_category{
+    margin-bottom: 14px;
 }
 .container_news_list .category_list{
     list-style: none;
-    width: 100px;
+    width: 175px;
+    margin-left: 5px;
+    display: table;
+    margin-top: -5px;
 }
 .container_news_list .category_list li{
-    width: 177px;
+    /* width: 177px; */
 }
 .container_news_list .category_list li a{
     background: #fff;
-    padding: 15px 14px 20px 17px;
+    padding: 12px 14px 15px 17px;
     line-height: 20px;
     font-weight: bold;
     font-size: 16px;
@@ -243,20 +265,23 @@ input[type="email"]{
     position: relative;
     width: 100%;
     display: block;
+    width: 145px;
 }
 .container_news_list .category_list li:first-child a{
-    padding-top: 40px;
-    padding-bottom: 14px;
+    padding-top: 38px;
+    padding-bottom: 9px;
 }
 .container_news_list .category_list li span{
     position: relative;
     display: block;
+    width: 110px;
+    padding-right: 37px;
 }
 .container_news_list .category_list li span:after{
     content: '';
     background: url('images/sprite.png') no-repeat;
     right: 0;
-    top: 50%;
+    top: 7px;
     position: absolute;
     width: 14px;
     height: 7px;
@@ -273,13 +298,16 @@ input[type="email"]{
     background-position: -249px -5px;
     margin-top: -6px;
     right: 3px;
+    top: 50%;
 }
 .new_notice{
     float: right;
     width: 241px;
-    position: relative;
+    position: absolute;
     background: #ffffff;
-    margin-top: 45px;
+    margin-top: 51px;
+    top: 84px;
+    right: -3px;
 }
 .new_notice_list{
     list-style: none;
@@ -292,22 +320,40 @@ input[type="email"]{
     width: 241px;
     height: 204px;
     position: absolute;
-    right: -241px;
-    top:0;
-    
+    right: -243px;
+    top: 0px;
 }
 .new_notice_list li{
     width: inherit;
-    padding: 21px 21px 7px 21px;
+    padding: 21px 20px 14px 21px;
     position: relative;
     margin-bottom: 0;
+    display: table;
+    width: 198px;
+}
+.new_notice_list li:after{
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: -22px;
+    border: 9px solid transparent;
+    border-left: 11px solid #fff;
 }
 .notice_list_title{
     font-weight: bold;
     color: #000;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     display: block;
+}
+.notice_list_desc {
+    width: 185px;
+    display: block;
+    min-height: 36px;
+}
+.notice_list_right img {
+    height: 204px;
+    width: 241px;
 }
 /*******************************************
             RIGHT CONTAINER
@@ -320,25 +366,34 @@ input[type="email"]{
     color: #fff;
 }
 .mainmenu{
-    margin: 49px auto;
+    margin: 38px 0 38px 67px;
     display: table;
 }
 .ul_menu{
-    display: table;
-    margin: 0 auto;
-    width: 563px;
 }
 .ul_menu li{
     list-style: none;
-    margin-right: 80px;
+    margin-right: 113px;
     width: 130px;
     line-height: 36px;
     display: block;
     float: left;
     position: relative;
 }
+.ul_menu li:nth-child(2n) {
+    margin-right: 111px;
+}
 .ul_menu li:nth-child(3n){
     margin-right: 0;
+}
+.ul_menu li:nth-child(4n){
+    list-style: none;
+    margin-right: 113px;
+    width: 130px;
+    line-height: 36px;
+    display: block;
+    float: left;
+    position: relative;
 }
 .ul_menu li a{
     color: #fff;
@@ -353,7 +408,7 @@ input[type="email"]{
 .ul_menu li a:before{
     content: '';
     position: absolute;
-    left: -30px;
+    left: -40px;
     top:50%;
     margin-top: -5px;
     background: #eb1c24;
@@ -366,29 +421,56 @@ input[type="email"]{
     display: block;
 }
 .right_born{
-    margin-top: 93px;
+    margin-top: 109px;
 }
 .born_list{
     list-style: none;
     width: 241px;
     float: right;
+    margin-top: 4px;
+}
+.born_list a {
+    margin-bottom: 13px;
+}
+.born_list_desc {
+    min-height: 34px;
+    display: block;
 }
 .born_list_left{
     width: 241px;
     height: 204px;
     position: absolute;
-    left: -241px;
-    top:0;
+    left: -239px;
+    top: 0;
+}
+.born_list_left.plus2{
+    top: 2px;
+}
+.born_list_left.plus4{
+    margin-top: 4px;
+}
+.born_list_left img{
+    width: 241px;
+    height: 204px;
 }
 .born_list li{
     width: inherit;
-    padding: 21px 0px 7px 21px;
+    padding: 21px 20px 11px 24px;
     width: 200px;
     position: relative;
     margin-bottom: 0;
 }
+.born_list li:after{
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: -18px;
+    border: 9px solid transparent;
+    border-right: 11px solid #212429;
+}
 .born_list hr{
     border: 1px solid #43484f;
+    margin: 27px 0 27px 0;
 }
 .born_list .right_born{
     float: right;
@@ -444,7 +526,7 @@ input[type="email"]{
     text-align: left;
 }
 .calendar_born_title{
-    margin: 47px auto 25px auto;
+    margin: 47px auto 44px auto;
     font-size: 16px;
     line-height: 22px;
     font-weight: bold;
@@ -457,7 +539,7 @@ input[type="email"]{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    width: 131px;
+    width: 126px;
     display: block;
     margin: 0 auto 0 auto;
     position: relative;
@@ -484,8 +566,8 @@ input[type="email"]{
     right: 3px;
 }
 .calendar_born_title:after{
-    right: -27px;
-    top: 10px;
+    right: -31px;
+    top: 6px;
     position: absolute;
     width: 14px;
     height: 7px;
